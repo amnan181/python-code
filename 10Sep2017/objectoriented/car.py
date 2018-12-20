@@ -9,7 +9,7 @@ class Car():
 
     def get_descriptive_name(self):
         print("In Car")
-        long_name = str(self.year)+ ' '+self.make + ' ' + self.model + ' '+ str(self.__odometer_reading)
+        long_name = '{} {} {} {}'.format(self.year,self.make,self.model,self.__odometer_reading)
         return long_name
 
     def update_odometer(self, val):
